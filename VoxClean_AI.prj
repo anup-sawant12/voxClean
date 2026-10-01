@@ -1,0 +1,6 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration file="VoxClean_AI.prj" location="." name="VoxClean_AI" target="target.mlapps" target-name="Package App">
+    <param.appname>VoxClean_AI</param.appname>
+    <param.summary>Speech background-noise suppression</param.summary>
+  </configuration>
+</deployment-project>

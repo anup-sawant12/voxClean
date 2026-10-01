@@ -1,0 +1,91 @@
+# ==============================================================================
+# VoxClean AI - .gitignore
+# Tailored for MATLAB, Deep Learning, Audio Processing, & Python utilities
+# ==============================================================================
+
+# --- Audio Files & Datasets (Prevent committing large audio data) ---
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+dataset/clean/*
+dataset/noise/*
+dataset/noisy/*
+!dataset/**/.gitkeep
+data/clean/*
+data/noise/*
+data/noisy/*
+!data/**/.gitkeep
+outputs/enhanced/*
+!outputs/**/.gitkeep
+messy_test_file.wav
+
+# --- Large Model Checkpoints & Weights ---
+models/*.mat
+!models/.gitkeep
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# --- MATLAB Artifacts ---
+*.asv
+*.m~
+*.slxc
+*.mex*
+*.p
+*.mlappinstall
+*.mat_unloaded
+*.autosave
+slprj/
+codegen/
+*.log
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# --- Operating System & IDE Files ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
